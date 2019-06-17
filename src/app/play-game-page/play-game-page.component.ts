@@ -34,7 +34,7 @@ export class PlayGamePageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onModalChange() {
+  onModalChange(value) {
     if (this.answer.toLowerCase() === this.answerCorrect) {
       this.message = this.messageSuccess;
       this.styleMessage = this.styleSuccess;
