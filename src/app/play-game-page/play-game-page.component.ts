@@ -18,12 +18,12 @@ export class PlayGamePageComponent implements OnInit {
   public isBtnFinish = false;
 
   listImage = [
-    'assets/images/imagesgame/img-game.jpg',
     'assets/images/imagesgame/img-game-1.jpg',
+    'assets/images/imagesgame/img-game.jpg',
     'assets/images/imagesgame/img-game-2.jpg'
   ];
 
-  listAnswer = ['kê đơn', 'kẻ cắp gặp bà già', 'mâm cao cỗ đầy'];
+  listAnswer = ['kẻ cắp gặp bà già', 'kê đơn' , 'mâm cao cỗ đầy'];
 
   index = 0;
   srcImage = this.listImage[0];
