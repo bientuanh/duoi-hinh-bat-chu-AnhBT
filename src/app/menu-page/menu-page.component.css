@@ -1,0 +1,16 @@
+.image-introduce {
+  background-image: url('../../assets/images/background/back-ground-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 400px;
+  padding-bottom: 205px;
+}
+
+/* .image-introduce:hover {
+  opacity: 0.5;
+} */
+
+img:hover {
+  opacity: 0.5;
+}

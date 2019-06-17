@@ -1,0 +1,26 @@
+.img-game-play {
+  padding-top: 150px;
+}
+
+.img-game-play .form-group label {
+  font-size: 200%;
+  font-weight: 800;
+}
+
+.img-game-play .row1 h1 {
+  font-weight: 900;
+}
+
+.img-game-play .row3 p {
+  float: left;
+}
+
+.style-message-error {
+  color: red;
+  font-weight: 700;
+}
+
+.style-message-success {
+  color: green;
+  font-weight: 700;
+}

@@ -1,0 +1,60 @@
+<div class="img-game-play">
+  <div class="container">
+
+    <!-- Row 1: Header text -->
+    <div class="row row1">
+      <div class="col-lg-12 text-center">
+        <h1>Hình ảnh {{index+1}}</h1>
+      </div>
+    </div> <br>
+    <!-- End of row 1 -->
+
+    <!-- Row 2: Image game play -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img src="{{ srcImage }}" alt="imge1">
+      </div>
+    </div> <br> <br>
+    <!-- End of row 2 -->
+
+    <!-- Row 3: form to answer -->
+    <div class="row row3 justify-content-md-center">
+      <div class="col-lg-6 text-center">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Đáp án</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Đáp án đúng" [(ngModel)]="answer" (ngModelChange)="onModalChange($event)"> <br>
+          <p [class]="styleMessage"> {{ message }} </p> <br>
+        </div>
+        <button class="btn btn-success" *ngIf="isBtnSuccess" (click)="onClickSuccessBtn()">Sang câu khác >></button>
+        <button class="btn btn-success" *ngIf="isBtnFinish" data-toggle="modal" data-target="#exampleModal">Kết
+          thúc</button>
+      </div>
+    </div>
+    <!-- End of row 3 -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Bạn đã phá đảo game này !!!
+          </div>
+          <div class="modal-footer">
+            <a href="/" class="btn btn-success">Quay về trang chủ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of modal -->
+
+  </div>
+</div>
